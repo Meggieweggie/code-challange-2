@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Guest List Manager</title>  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Event Guest List</h1>
+    <section class="formation">
+        <form id="guest-form">
+            <input type="text" id="guest-name" placeholder="Enter guest name" required>
+            <select id="guest-category" required>
+                <option value="" disabled selected>Select category</option>
+                <option value="friend" class="ally">Friend</option>
+                <option value="family" class="bloodline">Family</option>
+                <option value="colleague" class="workmates">Colleague</option>
+            </select>
+            <button type="submit">Add Guest</button>
+        </form>
+        <ul id="guestList"></ul>
+    </section>
+    <script src="index.js"></script>
+
+</body>
+</html>

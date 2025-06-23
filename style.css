@@ -1,0 +1,137 @@
+body {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, Arial, sans-serif;
+    padding: 32px;
+    max-width: 700px;
+    margin: 40px auto;
+    background: linear-gradient(135deg, #ffe0f7 0%, #f7e6ff 100%);
+    border-radius: 32px;
+    box-shadow: 0 8px 32px 0 rgba(255, 182, 193, 0.25), 0 1.5px 8px #f8bbd0;
+    border: 3px solid #ffb3c6;
+}
+
+h1 {
+    text-align: center;
+    color: #d72660;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 12px #fff0fa, 0 2px 8px #ffb3c6;
+    margin-bottom: 32px;
+    background: linear-gradient(90deg, #ffb3c6 0%, #fbc2eb 100%);
+    border-radius: 20px;
+    padding: 16px 0;
+    border: 2px dashed #d72660;
+}
+
+button {
+    margin-left: 8px;
+    font-family: inherit;
+    font-size: 1.1em;
+    transition: transform 0.15s, box-shadow 0.25s, background 0.25s;
+    box-shadow: 0 4px 16px #f8bbd0;
+    outline: none;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+button.add-btn {
+    color: white;
+    cursor: pointer;
+    padding: 10px 24px;
+    background: linear-gradient(90deg, #ff85a2 0%, #ffb3c6 100%);
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 16px #f8bbd0;
+    border: 2px solid #ffb3c6;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+}
+button.add-btn::after {
+    content: "";
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: linear-gradient(90deg, #ffb3c6 0%, #ff85a2 100%);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s;
+    border-radius: 30px;
+}
+button.add-btn:hover::after {
+    opacity: 1;
+}
+button.add-btn:hover {
+    color: #d72660;
+    transform: scale(1.08) rotate(-2deg);
+    box-shadow: 0 8px 24px #ffb3c6;
+}
+
+button.remove-btn {
+    margin-left: 12px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 24px;
+    background: linear-gradient(90deg, #f67280 0%, #c06c84 100%);
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 16px #f8bbd0;
+    border: 2px solid #f67280;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+}
+button.remove-btn::after {
+    content: "";
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: linear-gradient(90deg, #c06c84 0%, #f67280 100%);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s;
+    border-radius: 30px;
+}
+button.remove-btn:hover::after {
+    opacity: 1;
+}
+button.remove-btn:hover {
+    color: #fff0fa;
+    transform: scale(1.08) rotate(2deg);
+    box-shadow: 0 8px 24px #c06c84;
+}
+
+button.rsvp-btn {
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 24px;
+    background: linear-gradient(90deg, #a18cd1 0%, #fbc2eb 100%);
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 16px #f8bbd0;
+    border: 2px solid #a18cd1;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+}
+button.rsvp-btn::after {
+    content: "";
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: linear-gradient(90deg, #fbc2eb 0%, #a18cd1 100%);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s;
+    border-radius: 30px;
+}
+button.rsvp-btn:hover::after {
+    opacity: 1;
+}
+button.rsvp-btn:hover {
+    color: #a18cd1;
+    transform: scale(1.08) rotate(-2deg);
+    box-shadow: 0 8px 24px #a18cd1;
+}
