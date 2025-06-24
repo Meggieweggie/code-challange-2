@@ -59,7 +59,7 @@ No special requirements.
 
 ## Author
 
-[Megan Mumbi]
+Megan Mumbi
 
 ---
 
